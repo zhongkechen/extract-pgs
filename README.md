@@ -1,5 +1,7 @@
 # extract-pgs
 
+简体中文 · [English](README.en.md)
+
 把 MKV、TS / M2TS 或独立 SUP 中的 PGS 图片字幕转为外挂 SRT。队列按影片顺序运行。FFmpeg 提取原始轨道，Subtitle Edit 的 SeConv 按完整字幕边界分批导出图像和时间码，PaddleOCR 在本机 CPU 上识别文字。脚本用原始时间基线校验结果，为每部影片保留状态文件，并在校对通过后把独立字幕版本保存到视频旁边。
 
 ## 安装
